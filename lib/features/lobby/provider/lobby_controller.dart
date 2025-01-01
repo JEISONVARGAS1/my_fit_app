@@ -22,7 +22,6 @@ class LobbyController extends _$LobbyController {
   }
 
   Color chooseColor(index) {
-
     if(index == state.value!.index) return MyFitUiKit.util.color.menu;
     return MyFitUiKit.util.color.textColor;
   }

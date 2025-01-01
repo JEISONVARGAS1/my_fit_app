@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:go_router/go_router.dart';
 import 'package:my_fit_ui_kit/my_fit_ui_kit.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:my_fit_app/core/extension/context_extension.dart';
@@ -55,18 +56,18 @@ class _HomePage extends ConsumerState<HomePage> {
             children: [
               MyFitUiKit.widget.button.smallButton(
                 onTap: () {},
-                label: "Mi Qr",
-                icon: Icons.qr_code_2,
+                label: "Medicina",
+                icon: Icons.health_and_safety,
               ),
               MyFitUiKit.widget.button.smallButton(
-                onTap: () {},
-                label: "Asistencia",
-                icon: Icons.assignment_ind_sharp,
+                onTap: () => context.pushNamed("feedingBalancePage"),
+                label: "Alimentacion",
+                icon: Icons.food_bank,
               ),
               MyFitUiKit.widget.button.smallButton(
-                onTap: () {},
-                label: "Competencias",
-                icon: Icons.emoji_events_outlined,
+                onTap: () => context.pushNamed("smartWatchPage"),
+                label: "Mi reloj",
+                icon: Icons.favorite,
               ),
             ],
           ),

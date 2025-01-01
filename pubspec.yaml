@@ -24,7 +24,14 @@ dependencies:
   flutter_dotenv: ^5.2.1
   curved_labeled_navigation_bar: ^2.0.5
   freezed_annotation: ^2.4.4
+  health: ^11.1.1
+  permission_handler: ^11.3.1
   image_picker_loading_jm: ^0.0.10
+  sliding_up_panel: ^2.0.0+1
+  flutter_slidable: ^3.1.2
+  expandable: ^5.0.1
+
+
 
   my_fit_ui_kit:
     git:

@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/cupertino.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:my_fit_app/features/auth/provider/model/auth_state.dart';
@@ -15,6 +14,9 @@ class AuthController extends _$AuthController {
   }
 
   Future<void> initPage(BuildContext context) async {}
+
+  Future<void> setData() async {
+  }
 
   _setState(AuthState newState) => state = AsyncValue.data(newState);
 }

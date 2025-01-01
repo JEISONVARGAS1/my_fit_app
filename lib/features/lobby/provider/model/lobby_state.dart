@@ -16,8 +16,6 @@ sealed class LobbyState with _$LobbyState {
         index: 0,
         controller: PageController(),
         icons: [
-
-
           MenuModel(selected: Icons.widgets, unSelected: Icons.widgets_outlined),
           MenuModel(selected: Icons.fitness_center, unSelected: Icons.fitness_center),
           MenuModel(selected: Icons.person, unSelected: Icons.perm_identity),

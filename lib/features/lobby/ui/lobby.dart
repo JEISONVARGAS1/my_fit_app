@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:my_fit_app/features/my_training/ui/my_training.dart';
 import 'package:my_fit_ui_kit/my_fit_ui_kit.dart';
 import 'package:my_fit_app/features/home/ui/home.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:my_fit_app/features/profile/ui/profile.dart';
+import 'package:my_fit_app/features/my_training/ui/my_training.dart';
 import 'package:my_fit_app/features/lobby/provider/lobby_controller.dart';
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar.dart';
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
@@ -30,11 +31,12 @@ class _LobbyPage extends ConsumerState<LobbyPage> {
     return Scaffold(
       body: SafeArea(
         child: PageView(
+          physics: NeverScrollableScrollPhysics(),
           controller: state.controller,
           children: [
             HomePage(),
             MyTrainingPage(),
-            Container(),
+            ProfilePage(),
           ],
         ),
       ),

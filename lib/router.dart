@@ -4,8 +4,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:my_fit_app/core/page_not_found.dart';
 import 'package:my_fit_app/features/auth/ui/auth.dart';
+import 'package:my_fit_app/features/exercise_detail/ui/exercise_detail.dart';
+import 'package:my_fit_app/features/feeding_balance/ui/feeding_balance.dart';
 import 'package:my_fit_app/features/home/ui/home.dart';
 import 'package:my_fit_app/features/lobby/ui/lobby.dart';
+import 'package:my_fit_app/features/smart_watch/ui/smart_watch.dart';
 
 final goRouterProvider = Provider<GoRouter>(
   (ref) {
@@ -29,6 +32,21 @@ final goRouterProvider = Provider<GoRouter>(
           name: 'lobby',
           path: '/lobby',
           builder: (context, state) => const LobbyPage(),
+        ),
+        GoRoute(
+          name: 'exerciseDetailPage',
+          path: '/exerciseDetailPage',
+          builder: (context, state) => const ExerciseDetailPage(),
+        ),
+        GoRoute(
+          name: 'feedingBalancePage',
+          path: '/feedingBalancePage',
+          builder: (context, state) => const FeedingBalancePage(),
+        ),
+        GoRoute(
+          name: 'smartWatchPage',
+          path: '/smartWatchPage',
+          builder: (context, state) =>  SmartWatchPage(),
         ),
         GoRoute(
           name: '404',
